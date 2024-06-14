@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <script>
+      let shEl = document.getElementById("demo1");
+      let shbyeEl = document.getElementById("demo2");
+      let name = prompt("Pls enter your name !");
+      console.log("Hello " + name);
+      console.log("Goodbye " + name);
+
+      function shName() {
+        shEl.innerText = "Hello " + name;
+        shbyeEl.innerText = "Goodbye " + name;
+      }
+      shName();
+    </script>
+  </body>
+</html>
